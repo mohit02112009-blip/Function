@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="container_1 card">
+            <h1>Simple Calculator</h1>
+            <input type="number" id="add_num1" placeholder="First Number">
+            <input type="number" id="add_num2" placeholder="Second Number">
+            <button onclick="addCalculate()">Add</button>
+            <p id="result_add"></p>
+        </div>
+
+        <div class="container_2 card">
+            <h2>Square Calculator</h2>
+            <input type="number" id="square_num" placeholder="Enter a number">
+            <button onclick="calculateSquare()">Find Square</button>
+            <p id="result_square"></p>
+        </div>
+
+        <div class="container_3 card">
+            <h2>Find Number</h2>
+            <input type="number" id="find_num" placeholder="Enter a number">
+            <button onclick="findnumber()">Find Number</button>
+            <p id="result_find"></p>
+        </div>
+
+        <div class="container_4 card">
+            <h2>Find the Maximum Number</h2>
+            <input type="number" id="largest_n1" placeholder="Enter first number">
+            <input type="number" id="largest_n2" placeholder="Enter second number">
+            <input type="number" id="largest_n3" placeholder="Enter third number">
+            <button onclick="findLargest()">Find Largest</button>
+            <p id="result_largest"></p>
+        </div>
+
+        <div class="container_5 card">
+
+            <h2>Student Percentage Calculator</h2>
+            <input type="number" id="percent_sub1" placeholder="Subject 1 Marks">
+            <input type="number" id="percent_sub2" placeholder="Subject 2 Marks">
+            <input type="number" id="percent_sub3" placeholder="Subject 3 Marks">
+            <input type="number" id="percent_sub4" placeholder="Subject 4 Marks">
+            <input type="number" id="percent_sub5" placeholder="Subject 5 Marks">
+            <button onclick="calculatePercentage()">Calculate Percentage</button>
+            <p id="result_percentage"></p>
+        </div>
+
+        <div class="container_6 card">
+            <h2>Multiply Two Numbers</h2>
+            <input type="number" id="mul_num1" placeholder="Enter First Number">
+            <input type="number" id="mul_num2" placeholder="Enter Second Number">
+            <button onclick="multiplyCalculate()">Multiply</button>
+            <p id="result_multiply"></p>
+        </div>
+
+        <div class="container_7 card">
+            <h2>GST Calculator (18%)</h2>
+            <input type="number" id="price" placeholder="Enter Product Price">
+            <button onclick="calculateGST()">Calculate GST</button>
+            <p id="result_7"></p>
+        </div>
+
+        <div class="container_8 card">
+            <h2>Fahrenheit to Celsius Converter</h2>
+            <input type="number" id="fahrenheit" placeholder="Enter Temperature (°F)">
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="result_8"></p>
+        </div>
+
+        <div class="container_9 card">
+            <h2>Calculator</h2>
+            <input type="number" id="calculator_num1" placeholder="Enter first number">
+            <input type="number" id="calculator_num2" placeholder="Enter second number">
+            <select id="calculator_operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button onclick="calculatorCompute()">Calculate</button>
+            <p id="result_calculator"></p>
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

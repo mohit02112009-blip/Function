@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Map Function</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+        }
+
+        .course {
+            background: #334155;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #38bdf8;
+        }
+
+        .productContainer {
+            background: #334155;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .employee {
+            background: #334155;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .list {
+            background: #334155;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!--Project 1-->
+
+    <div class="container_1" id="courseContainer">
+        <h2>Courses List</h2>
+    </div>
+
+     <!--Project 2-->
+
+    <div class="container_2" id="productContainer">
+        <h2>Products List</h2>
+    </div>
+
+    <!--Project 3-->
+    <div class="container_3" id="employee">
+        <h2>Employees Directory</h2>
+    </div>
+
+    <!--Project 4-->
+    <div class="container_4" id="list">
+        <h2>Course Website</h2>
+    </div>
+
+    <script>
+        // const num = [1, 2, 3, 4, 5];
+        // const doubled = num.map(function(num) {
+        //     return num * 2;
+        // });
+        // console.log(doubled); // Output: [2, 4, 6, 8, 10]
+
+        // // Using Arrow Function (Modern Syntax)
+
+        // const numbers = [1, 2, 3, 4, 5];
+        // const doubledArrow = numbers.map(num => num * 2);
+        // console.log(doubledArrow); // Output: [2, 4, 6, 8, 10]
+
+        // Students Card //
+
+        let courses = [
+            {
+                name: "JavaScript",
+                price: 100,
+                duration: "3 months"
+            },
+            {
+                name: "Python",
+                price: 120,
+                duration: "4 months"
+            },
+            {
+                name: "Java",
+                price: 150,
+                duration: "5 months"
+            },
+            {
+                name: "C++",
+                price: 90,
+                duration: "2 months"
+            }
+        ];
+
+        const html = courses.map(course => `
+            <div class="course">
+                <h2>${course.name}</h2>
+                <p><strong>Price:</strong> ${course.price}</p>
+                <p><strong>Duration:</strong> ${course.duration}</p>
+            </div>
+        `).join("");
+
+        document.getElementById("courseContainer").innerHTML = html;
+
+        // Products Card //
+
+        const products = [
+            {
+                name: "Laptop",
+                price: 800,
+                brand: "Dell"
+            },
+            {
+                name: "Smartphone",
+                price: 600,
+                brand: "Samsung"
+            },
+            {
+                name: "Headphones",
+                price: 150,
+                brand: "Sony"
+            },
+            {
+                name: "Smartwatch",
+                price: 200,
+                brand: "Apple"
+            }
+        ];
+
+        const productHtml = products.map(product => `
+            <div class="productContainer">
+                <h2>${product.name}</h2>
+                <p><strong>Price:</strong> ${product.price}</p>
+                <p><strong>Brand:</strong> ${product.brand}</p>
+            </div>
+        `).join("");
+
+        document.getElementById("productContainer").innerHTML = productHtml;
+
+        // Employees Card //
+
+        const employees = [
+            {
+                name: "John Doe",
+                position: "Software Engineer",
+                department: "IT"
+            },
+            {
+                name: "Jane Smith",
+                position: "Project Manager",
+                department: "Operations"
+            },
+            {
+                name: "Mike Johnson",
+                position: "Data Analyst",
+                department: "Business Intelligence"
+            },
+            {
+                name: "Emily Davis",
+                position: "UX Designer",
+                department: "Design"
+            }
+        ];
+
+        const employeeHtml = employees.map(employee => `
+            <div class="employee">
+                <h2>${employee.name}</h2>
+                <p><strong>Position:</strong> ${employee.position}</p>
+                <p><strong>Department:</strong> ${employee.department}</p>
+            </div>
+        `).join("");
+
+        document.getElementById("employee").innerHTML = employeeHtml;
+
+        // Course Website Card //
+
+        const courseWebsite = [
+            {
+                title: "HTML & CSS",
+                description: "Learn the basics of web development.",
+                link: "https://www.example.com/html-css"
+            },
+            {
+                title: "JavaScript",
+                description: "Master JavaScript for dynamic web applications.",
+                link: "https://www.example.com/javascript"
+            },
+            {
+                title: "React",
+                description: "Build modern web applications with React.",
+                link: "https://www.example.com/react"
+            },
+            {
+                title: "Node.js",
+                description: "Learn server-side development with Node.js.",
+                link: "https://www.example.com/nodejs"
+            }
+        ];
+
+        const courseHtml = courseWebsite.map(course => `
+            <div class="course">
+                <h2>${course.title}</h2>
+                <p>${course.description}</p>
+                <a href="${course.link}" target="_blank">Learn More</a>
+            </div>
+        `).join("");
+
+        document.getElementById("list").innerHTML = courseHtml;
+
+    </script>
+
+</body>
+
+</html>

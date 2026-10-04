@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Function</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container_1">
+        <h2>Calculator</h2>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button onclick="calculateResult()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="container_2">
+        <h2>Find Number</h2>
+        <input type="number" id="num3" placeholder="Enter a number">
+        <button onclick="findnumber()">Find Number</button>
+        <p id="result_2"></p>
+    </div>
+
+    <div class="container_3">
+        <h2>Reverse String</h2>
+        <input type="text" id="inputString" placeholder="Enter a string">
+        <button onclick="reverseString()">Reverse</button>
+        <p id="result_3"></p>
+    </div>
+
+    <div class="container_4">
+        <h2>Count Vowels</h2>
+        <input type="text" id="inputString2" placeholder="Enter a string">
+        <button onclick="countVowels()">Count Vowels</button>
+        <p id="result_4"></p>
+    </div>
+
+    <div class="container_5">
+        <h2>Find the Maximum Number</h2>
+        <input type="number" id="num4" placeholder="Enter first number">
+        <input type="number" id="num5" placeholder="Enter second number">
+        <input type="number" id="num6" placeholder="Enter third number">
+        <button onclick="findLargest()">Find Largest</button>
+        <p id="result_5"></p>
+    </div>
+
+    <div class="container_6">
+        <h2>Debounce Function</h2>
+        <input type="text" id="debounceInput" placeholder="Enter text...">
+        <button onclick="debouncedInput()">Debounce</button>
+        <p id="debounceResult"></p>
+    </div>
+
+    <div class="container_7">
+        <h2>Throttle Function</h2>
+        <input type="text" id="throttleInput" placeholder="Enter text...">
+        <button onclick="throttledInput()">Throttle</button>
+        <p id="throttleResult"></p>
+    </div>
+
+    <div class="container_8">
+        <h2>Memoization</h2>
+        <input type="number" id="memoInput" placeholder="Enter a number">
+        <button onclick="memoizedFactorial()">Calculate Factorial</button>
+        <p id="memoResult"></p>
+    </div>
+
+    <div class="container_9">
+        <h2>Custom Map Function</h2>
+        <input type="text" id="mapInput" placeholder="Enter comma-separated values">
+        <button onclick="customMap()">Apply Map</button>
+        <p id="mapResult"></p>
+    </div>
+
+    <div class="container_10">
+        <h2>Filter Array</h2>
+        <input type="text" id="filterInput" placeholder="Enter comma-separated values">
+        <button onclick="customFilter()">Filter Array</button>
+        <p id="filterResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
